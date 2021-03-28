@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  /* background: #cafafe; */
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+.header {
+  background: #fc4445;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.yt-logo {
+  margin-right: 2rem;
+  width: 140px;
+  display: inline-block;
+  margin-right: 30vw;
+}
+.header-text {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1.5px 1.5px 0 rgb(190, 188, 188);
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link-input {
+  height: 5rem;
+  width: 50%;
+  margin: 5rem auto 2rem auto;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.link-input:focus {
+  outline: none;
+}
+
+.search {
+  position: relative;
+  background: #fc4445;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  width: 50%;
+  padding: 0.7rem;
+  box-shadow: -6px 6px 0 #d83333;
+  text-shadow: -1px 1px 0 rgb(190, 188, 188);
+}
+.search:focus {
+  outline: none;
+}
+
+.search:hover {
+  background: #e23333;
+  box-shadow: -6px 6px 0 #c92b2b;
+}
+
+.search:active {
+  left: -3px;
+  top: 3px;
+  box-shadow: -3px 3px #d83333;
+}
+
+.search::before {
+  content: "";
+  width: 0;
+  height: 0;
+
+  border: 6px solid transparent;
+  border-right-color: #d83333;
+  border-left-width: 0px;
+
+  position: absolute;
+  display: block;
+  left: -6px;
+  top: 0;
+}
+
+.search::after {
+  content: "";
+  width: 0;
+  height: 0;
+
+  border: 6px solid transparent;
+  border-top-color: #d83333;
+  border-bottom-width: 0px;
+
+  position: absolute;
+  display: block;
+  bottom: -6px;
+  right: 0;
+}
+
+.search:active::before,
+.search:active::after {
+  border-width: 3px;
+}
+
+.statistics {
+  padding: 2rem 0 1.5rem 0;
+  margin: 12rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f73131;
+  color: white;
+  width: 50vw;
+  border-radius: 0.4rem;
+}
+.statistics-header {
+  font-size: 3em;
+  margin-bottom: 2rem;
+}
+
+.statistics-table tbody {
+  font-size: 2rem;
+}
+.statistics-table {
+  margin-bottom: 1.5rem;
+}
