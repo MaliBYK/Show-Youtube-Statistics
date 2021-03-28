@@ -19,10 +19,8 @@
   align-items: center;
 }
 .yt-logo {
-  margin-right: 2rem;
   width: 140px;
   display: inline-block;
-  margin-right: 30vw;
 }
 .header-text {
   font-size: 2rem;
@@ -40,7 +38,7 @@
 
 .link-input {
   height: 5rem;
-  width: 50%;
+  width: 70%;
   margin: 5rem auto 2rem auto;
   border-radius: 0.5rem;
   font-size: 1.5rem;
@@ -56,12 +54,13 @@
   color: #fff;
   border: none;
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
-  width: 50%;
+  width: 70%;
   padding: 0.7rem;
   box-shadow: -6px 6px 0 #d83333;
   text-shadow: -1px 1px 0 rgb(190, 188, 188);
+  margin-bottom: 2rem;
 }
 .search:focus {
   outline: none;
@@ -115,7 +114,7 @@
 
 .statistics {
   padding: 2rem 0 1.5rem 0;
-  margin: 12rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,4 +133,12 @@
 }
 .statistics-table {
   margin-bottom: 1.5rem;
+}
+
+.alert {
+  padding: 3rem !important;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.35em !important;
 }

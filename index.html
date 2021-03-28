@@ -7,6 +7,12 @@
     <title>Youtube Statistics WebApp</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
@@ -22,7 +28,10 @@
         />
         <button class="search">Show The Statistics</button>
       </div>
-      <div class="statistics">
+      <div class="alert alert-danger" style="display: none" role="alert">
+        This is a danger alert—check it out!
+      </div>
+      <div class="statistics" style="display: none">
         <h2 class="statistics-header">Statistics Of Developer Box</h2>
         <table class="statistics-table">
           <tbody class="table-body">
