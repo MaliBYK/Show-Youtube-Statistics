@@ -13,7 +13,6 @@ function search(e) {
   console.log(channelKey);
   if (channelKey.length > 1) {
     channelKey = channelKey[1];
-    console.log(channelKey);
     youtube.getSubscribers(channelKey, apiKey).then(data => console.log(data));
   } else {
     console.log("HATA");

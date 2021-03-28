@@ -6,7 +6,9 @@ class Youtube {
       )
         .then(response => response.json())
         .then(data => {
-          resolve(data["items"][0].statistics.subscriberCount);
+          document.querySelector(".subscribers-td").innerHTML =
+            data["items"][0].statistics.subscriberCount;
+          resolve(data);
         })
         .catch(err => reject(err));
     });
